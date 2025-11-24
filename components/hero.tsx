@@ -13,7 +13,7 @@ function ImageSlot(): JSX.Element {
     <div className="flex-shrink-0">
       {loaded ? (
         <img
-          src={encodeURI("/saran passport size photo.png")}
+          src={encodeURI("/SARAN PASSPORT SIZE PHOTO.png")}
           alt="Saran"
           className="w-40 h-40 sm:w-56 sm:h-56 rounded-full object-cover"
           onError={() => setLoaded(false)}
@@ -130,3 +130,4 @@ export function Hero() {
     </section>
   )
 }
+
