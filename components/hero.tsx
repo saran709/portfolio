@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Script from "next/script"
 import { BackgroundPathsAnimation } from "./background-paths"
@@ -13,7 +13,7 @@ function ImageSlot(): JSX.Element {
     <div className="flex-shrink-0">
       {loaded ? (
         <img
-          src={encodeURI("/SARAN PASSPORT SIZE PHOTO.png")}
+          src={encodeURI("/photo.png")}
           alt="Saran"
           className="w-40 h-40 sm:w-56 sm:h-56 rounded-full object-cover"
           onError={() => setLoaded(false)}
@@ -111,6 +111,14 @@ export function Hero() {
                 >
                   <Mail className="w-6 h-6" />
                 </a>
+
+                {/* Resume download button - place your resume at `public/resume.pdf` */}
+                <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+                  <a href="/resume.pdf" download title="Download Resume (PDF)" className="inline-flex items-center gap-2">
+                    <Download className="w-5 h-5" />
+                    <span>Resume</span>
+                  </a>
+                </Button>
               </motion.div>
             </div>
           </motion.div>
@@ -130,4 +138,3 @@ export function Hero() {
     </section>
   )
 }
-
