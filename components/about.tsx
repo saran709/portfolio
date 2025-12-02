@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { Code2, Palette, Zap } from "lucide-react"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
 export function About() {
   const skills = [
@@ -50,18 +51,24 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="p-6 rounded-xl bg-gray-900/50 border border-gray-800 hover:border-gray-700 transition-colors"
+                className="h-full"
               >
-                <Icon className="w-8 h-8 mb-4 text-white" />
-                <h3 className="text-xl font-semibold mb-4">{skill.title}</h3>
-                <ul className="space-y-2">
-                  {skill.items.map((item) => (
-                    <li key={item} className="text-gray-400 text-sm flex items-center">
-                      <span className="w-1.5 h-1.5 bg-gray-500 rounded-full mr-2"></span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <Card className="h-full bg-gray-900 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:shadow-lg hover:shadow-gray-900/50 group overflow-hidden">
+                  <CardHeader>
+                    <Icon className="w-8 h-8 mb-4 text-white" />
+                    <CardTitle className="group-hover:text-white transition-colors text-card-foreground">{skill.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-col">
+                    <ul className="space-y-2">
+                      {skill.items.map((item) => (
+                        <li key={item} className="text-gray-400 text-sm flex items-center">
+                          <span className="w-1.5 h-1.5 bg-gray-500 rounded-full mr-2"></span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
               </motion.div>
             )
           })}
