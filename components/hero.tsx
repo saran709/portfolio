@@ -59,6 +59,10 @@ export function Hero() {
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-white to-white/80">SARAN R</span>
               </h1>
 
+              <p className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gray-500 mb-4">
+                saran709 • saranr • Paavai Engineering College
+              </p>
+
               <p className="text-xl sm:text-2xl text-gray-300 mb-4 font-light">Java Backend Developer | Prompt Engineering Enthusiast</p>
 
               <p className="text-gray-400 text-lg mb-12 leading-relaxed">Just a learner, a vibe coder — figuring things out one line at a time.</p>

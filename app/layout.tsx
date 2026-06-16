@@ -13,11 +13,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: "SARAN R - Full Stack Developer & Creative Technologist",
   description:
-    "Explore my portfolio of interactive web experiences, 3D integrations, and full-stack projects. Building beautiful digital experiences with React, Next.js, and modern web technologies.",
+    "Explore SARAN R's portfolio of interactive web experiences, 3D integrations, and full-stack projects. Also known as saran709 and saranr, with roots at Paavai Engineering College.",
   keywords: [
     "SARAN R",
+    "Saran R Paavai",
     "saran709",
+    "saranr",
     "Saran R",
+    "saran r paavai",
     "Paavai Engineering College",
     "Full Stack Developer",
     "Java Backend",
@@ -41,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SARAN R - Full Stack Developer & Creative Technologist",
     description:
-      "Explore my portfolio of interactive web experiences, 3D integrations, and full-stack projects.",
+      "Explore SARAN R's portfolio of interactive web experiences, 3D integrations, and full-stack projects. Also known as saran709 and saranr.",
     siteName: "SARAN R",
     type: "website",
     url: "/",
@@ -50,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SARAN R - Full Stack Developer & Creative Technologist",
     description:
-      "Explore my portfolio of interactive web experiences, 3D integrations, and full-stack projects.",
+      "Explore SARAN R's portfolio of interactive web experiences, 3D integrations, and full-stack projects. Also known as saran709 and saranr.",
   },
 }
 
@@ -78,7 +81,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "SARAN R",
               url: getSiteUrl(),
-              alternateName: ["saran709", "Saran R"],
+              alternateName: ["saran709", "saranr", "Saran R Paavai", "Saran R"],
               jobTitle: "Full Stack Developer",
               alumniOf: "Paavai Engineering College",
               sameAs: [
