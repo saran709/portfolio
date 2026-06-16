@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { Trophy, Lightbulb, Camera, Code } from "lucide-react"
+import { Trophy, Lightbulb, Camera, Code, Users, BookOpen, Heart } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { achievements } from "@/data/certificates"
 
@@ -9,6 +9,9 @@ const iconMap = {
   lightbulb: Lightbulb,
   camera: Camera,
   code: Code,
+  users: Users,
+  book: BookOpen,
+  heart: Heart,
 }
 
 export function Achievements() {
