@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import Loader from "@/components/ui/loader"
@@ -32,11 +32,6 @@ export const metadata: Metadata = {
   },
   generator: "v0.app",
   // icons removed to disable favicon/tab image
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   openGraph: {
     title: "SARAN R - Full Stack Developer & Creative Technologist",
     description:
@@ -50,6 +45,12 @@ export const metadata: Metadata = {
     description:
       "Explore my portfolio of interactive web experiences, 3D integrations, and full-stack projects.",
   },
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export default function RootLayout({
