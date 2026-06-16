@@ -46,11 +46,21 @@ export const achievements = [
   {
     title: "Google Student Ambassador",
     description: "Organized developer workshops and events, mentored peers, and acted as a campus liaison to promote Google developer programs.",
-    icon: "lightbulb",
+    icon: "users",
   },
   {
     title: "Intern at Infosys springboard",
     description: "Built and deployed full‑stack web applications using React and Node.js, implemented REST APIs, and worked with CI/CD pipelines.",
     icon: "code",
-  }
+  },
+  {
+    title: "GeeksforGeeks Student Ambassador",
+    description: "Represented GeeksforGeeks on campus, organized coding sessions and study groups, and promoted learning resources to fellow students.",
+    icon: "book",
+  },
+  {
+    title: "Youth Mentor",
+    description: "Mentored young learners in coding and career skills, organized workshops and one-on-one guidance to help students build projects and prepare for technical interviews.",
+    icon: "heart",
+  },
 ]
