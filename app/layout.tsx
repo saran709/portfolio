@@ -68,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="I2BYrsWNantOwzqHl-55e_N4EK6LPyIJlVImBZJWvNg" />
         {/* Schema.org JSON-LD for Person to help search engines associate names/affiliations */}
         <script
           type="application/ld+json"
