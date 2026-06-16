@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import Script from "next/script"
 import { BackgroundPathsAnimation } from "./background-paths"
 
-function ImageSlot(): JSX.Element {
+function ImageSlot() {
   const [loaded, setLoaded] = useState(true)
 
   return (
