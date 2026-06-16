@@ -3,12 +3,14 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import Loader from "@/components/ui/loader"
+import { getSiteUrl } from "@/lib/site"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: "SARAN R - Full Stack Developer & Creative Technologist",
   description:
     "Explore my portfolio of interactive web experiences, 3D integrations, and full-stack projects. Building beautiful digital experiences with React, Next.js, and modern web technologies.",
@@ -31,6 +33,10 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   generator: "v0.app",
+  applicationName: "SARAN R Portfolio",
+  alternates: {
+    canonical: "/",
+  },
   // icons removed to disable favicon/tab image
   openGraph: {
     title: "SARAN R - Full Stack Developer & Creative Technologist",
@@ -38,6 +44,7 @@ export const metadata: Metadata = {
       "Explore my portfolio of interactive web experiences, 3D integrations, and full-stack projects.",
     siteName: "SARAN R",
     type: "website",
+    url: "/",
   },
   twitter: {
     card: "summary_large_image",
@@ -69,6 +76,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "SARAN R",
+              url: getSiteUrl(),
               alternateName: ["saran709", "Saran R"],
               jobTitle: "Full Stack Developer",
               alumniOf: "Paavai Engineering College",
